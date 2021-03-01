@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from .models import Slider, Team
 from youtubers.models import Youtuber
-
 # Create your views here.
+
 
 def home(request):
     sliders = Slider.objects.all()
