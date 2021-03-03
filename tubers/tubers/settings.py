@@ -12,6 +12,14 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+import environ
+
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
+#...
+#...rest will be same
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -90,10 +98,11 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lco',
-        'USER': 'postgres',
-        'PASSWORD': 'mrunal',
-        'HOST': 'localhost'
+        'NAME': env ('ddfq5lukg11q7j'),
+        'PORT': env  (5432),
+        'USER': env ('rqsrpsetgrvkim'),
+        'PASSWORD': env ('2091cdfc161115bcc1097b9deeca2a0d21b340abbab74be1fb0c2cfb379be27f'),
+        'HOST': env ('ec2-18-211-97-89.compute-1.amazonaws.com')
     }
 }
 
