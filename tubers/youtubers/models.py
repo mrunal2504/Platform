@@ -7,12 +7,9 @@ from ckeditor.fields import RichTextField
 class Youtuber(models.Model):
 
     crew_choices = (
-        ('1', '1'),
-        ('2', '2'),
-        ('3', '3'),
-        ('4', '4'),
-        ('5', '5'),
-        ('more then 5', 'more then 5'),
+        ('solo', 'solo'),
+        ('small', 'small'),
+        ('large', 'large'),
     )
 
     camera_choices = (

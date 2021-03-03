@@ -6,12 +6,10 @@ name = "pypi"
 [packages]
 pillow = "*"
 django = "*"
-psycopg2 = "*"
 djangocms-admin-style = "*"
 django-ckeditor = "*"
-gunicorn = "*"
-whitenoise = "*"
 django-allauth = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

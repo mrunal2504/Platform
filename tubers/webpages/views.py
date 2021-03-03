@@ -21,7 +21,13 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'webpages/about.html')
+    sliders = Slider.objects.all()
+    teams = Team.objects.all()
+    data = {
+        'sliders': sliders,
+        'teams': teams
+    } 
+    return render(request, 'webpages/about.html', data)
 
 
 def services(request):

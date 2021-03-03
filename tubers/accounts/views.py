@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+
 def login(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -22,7 +23,6 @@ def login(request):
             return redirect('login')
 
     return render(request, 'accounts/login.html')
-
 
 
 def register(request):
@@ -59,8 +59,7 @@ def logout_user(request):
     logout(request)
     return redirect('home')
 
+
 @login_required(login_url='login')
 def dashboard(request):
-    return render(request, 'accounts/dashboard.html')    
-
-
+    return render(request, 'accounts/dashboard.html')
