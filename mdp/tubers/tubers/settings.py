@@ -98,11 +98,12 @@ WSGI_APPLICATION = 'tubers.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': env('ddfq5lukg11q7j'),
-        'PORT': env(5432),
-        'USER': env('rqsrpsetgrvkim'),
-        'PASSWORD': env('2091cdfc161115bcc1097b9deeca2a0d21b340abbab74be1fb0c2cfb379be27f'),
-        'HOST': env('ec2-18-211-97-89.compute-1.amazonaws.com'),
+        'HOST': env('ec2-3-209-176-42.compute-1.amazonaws.com'),
+        'NAME': env('dfstmneosh3rd2'),
+        'PORT': env('5432'),
+        'USER': env('javxowxznadaae'),
+        'PASSWORD': env('3c5948b683949fdeb6c04c23d25fa91a49d8896f0ac4d09b382ed28813f64585'),
+        
     }
 }
 
