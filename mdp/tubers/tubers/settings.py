@@ -34,7 +34,7 @@ SECRET_KEY = 'c3!o6#)+tysed3_zo$#_0+-z1d0_9*!=9its^37khd-+!kan+&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djangotodo-list.herokuapp.com']
+ALLOWED_HOSTS = ['limitless-reaches-73124.herokuapp.com']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
